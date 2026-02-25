@@ -36,7 +36,7 @@ This project was developed as part of the **Programming with Java** course.
 
 ## 🗄️ Database Design
 
-Database Name: `ecommerce`
+Database Name: `supermarket`
 
 The system uses a normalized relational database with proper primary keys, foreign keys, constraints, and referential integrity to ensure data consistency.
 
