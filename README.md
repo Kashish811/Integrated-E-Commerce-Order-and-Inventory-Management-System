@@ -150,7 +150,7 @@ This ensures atomic operations and prevents data inconsistency.
 
 ## 📂 Project Structure
 
-
+````markdown
 src/
 │
 ├── model/
@@ -199,7 +199,7 @@ src/
 │   └── order_history.fxml
 │
 └── MainApp.java
-
+````
 
 ---
 
