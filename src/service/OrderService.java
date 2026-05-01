@@ -8,10 +8,6 @@ import model.OrderItem;
 import util.CustomException;
 import util.DatabaseConnection;
 
-/**
- * Class OrderService
- * Simple comment for OrderService
- */
 public class OrderService {
     // Method checkout
     public void checkout(int customerId) throws Exception {
