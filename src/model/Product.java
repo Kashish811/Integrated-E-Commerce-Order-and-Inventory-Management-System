@@ -2,7 +2,6 @@ package model;
 
 /**
  * Class Product
- * Simple comment for Product
  */
 public class Product {
 
