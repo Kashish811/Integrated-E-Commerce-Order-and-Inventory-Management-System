@@ -1,9 +1,5 @@
 package model;
 
-/**
- * Class InventoryItem
- * Simple comment for InventoryItem
- */
 public class InventoryItem {
     private int productId;
     private String productName;
