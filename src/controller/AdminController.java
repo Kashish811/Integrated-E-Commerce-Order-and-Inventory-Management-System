@@ -15,10 +15,6 @@ import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-/**
- * Class AdminController
- * Simple comment for AdminController
- */
 public class AdminController implements Initializable {
 
     private ProductService productService = new ProductService();
