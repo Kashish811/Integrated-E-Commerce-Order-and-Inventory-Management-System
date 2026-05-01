@@ -7,10 +7,6 @@ import model.CartItem;
 import util.CustomException;
 import util.DatabaseConnection;
 
-/**
- * Class CartService
- * Simple comment for CartService
- */
 public class CartService {
     // Method addToCart
     public void addToCart(int customerId, int productId, int quantity) throws Exception {
