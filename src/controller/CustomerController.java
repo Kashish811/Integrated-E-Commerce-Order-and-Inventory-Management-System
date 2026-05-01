@@ -23,10 +23,6 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-/**
- * Class CustomerController
- * Simple comment for CustomerController
- */
 public class CustomerController implements Initializable {
 
     private ProductService productService = new ProductService();
