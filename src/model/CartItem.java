@@ -1,9 +1,5 @@
 package model;
 
-/**
- * Class CartItem
- * Simple comment for CartItem
- */
 public class CartItem {
 
     private int productId;
