@@ -1,0 +1,27 @@
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+/**
+ * Class MainApp
+ * Simple comment for MainApp
+ */
+public class MainApp extends Application {
+
+    @Override
+    // Method start
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/view/login.fxml"));
+        Scene scene = new Scene(loader.load(), 900, 600);
+
+        stage.setTitle("E-Commerce System");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}

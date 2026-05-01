@@ -1,26 +1,27 @@
 package model;
 
+/**
+ * Class Product
+ * Simple comment for Product
+ */
 public class Product {
 
-    private int productId;
-    private String productName;
+    private int id;
+    private String name;
     private double price;
 
-    public Product(int productId, String productName, double price) {
-        this.productId = productId;
-        this.productName = productName;
+        public Product(int id, String name, double price) {
+        this.id = id;
+        this.name = name;
         this.price = price;
     }
 
-    public int getProductId() {
-        return productId;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public double getPrice() {
-        return price;
-    }
+        // Method getId
+    public int getId() { return id; }
+    
+        // Method getName
+    public String getName() { return name; }
+    
+        // Method getPrice
+    public double getPrice() { return price; }
 }

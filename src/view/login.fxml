@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Region?>
+
+<!-- Simple FXML View -->
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="controller.LoginController"
+           stylesheets="@styles.css"
+           styleClass="root"
+           prefWidth="900" prefHeight="600">
+
+            <!-- Simple FXML View -->
+<VBox spacing="25" alignment="CENTER"
+          maxWidth="400" maxHeight="450"
+          styleClass="login-card"
+          style="-fx-background-color: #313244; -fx-padding: 50; -fx-background-radius: 15; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 0, 5);">
+
+        <Label text="Supermart" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #b4befe;"/>
+        <Label text="Welcome Back" styleClass="title" style="-fx-font-size: 20px;" />
+        
+        <Region prefHeight="15" />
+
+                <TextField fx:id="emailField" promptText="Email Address" maxWidth="300" style="-fx-pref-height: 40px; -fx-font-size: 14px;" />
+        
+                <PasswordField fx:id="passwordField" promptText="Password" maxWidth="300" style="-fx-pref-height: 40px; -fx-font-size: 14px;"/>
+        
+        <Region prefHeight="20" />
+
+                <Button text="Login" onAction="#handleLogin" prefWidth="300" style="-fx-pref-height: 45px; -fx-font-size: 16px;"/>
+
+        <Region prefHeight="10" />
+        <Label text="Sign in to manage orders and inventory." style="-fx-text-fill: #a6adc8; -fx-font-size: 12px;" />
+    </VBox>
+
+</StackPane>

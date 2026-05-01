@@ -1,0 +1,31 @@
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.base.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.controls.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.fxml.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.graphics.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.media.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.swing.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx.web.jar",
+        "c:\\Users\\Kashish\\Downloads\\openjfx-17.0.19_windows-x64_bin-sdk (2)\\javafx-sdk-17.0.19\\lib\\javafx-swt.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.graphics.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.web.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.fxml.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx-swt.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\mysql-connector-j-9.6.0.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.base.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.media.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.controls.jar",
+        "c:\\Users\\Kashish\\OneDrive\\Attachments\\SEM4\\PIJL\\Ecommerce\\lib\\javafx.swing.jar"
+    ],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Program Files\\Java\\jdk-17",
+            "default": true
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Region?>
+
+<!-- Simple FXML View -->
+<VBox spacing="20" alignment="TOP_CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AdminController"
+      prefWidth="900" prefHeight="650"
+      stylesheets="@styles.css"
+      styleClass="root"
+      style="-fx-padding: 30;">
+
+        <HBox alignment="CENTER_LEFT" spacing="20">
+        <Label text="Admin Dashboard" styleClass="title" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button text="Logout" onAction="#logout" style="-fx-background-color: #f38ba8; -fx-text-fill: #11111b;"/>
+    </HBox>
+
+        <HBox spacing="30" alignment="TOP_CENTER">
+                <VBox spacing="10" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+            <Label text="Add Product" styleClass="subtitle"/>
+            <TextField fx:id="nameField" promptText="Product Name"/>
+            <TextField fx:id="priceField" promptText="Price"/>
+            <TextField fx:id="categoryField" promptText="Category ID"/>
+            <Button text="Add Product" onAction="#addProduct" maxWidth="Infinity"/>
+        </VBox>
+
+                <VBox spacing="10" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+            <Label text="Update Product" styleClass="subtitle"/>
+            <TextField fx:id="updateIdField" promptText="Product ID"/>
+            <TextField fx:id="updateNameField" promptText="New Name"/>
+            <TextField fx:id="updatePriceField" promptText="New Price"/>
+            <TextField fx:id="updateCategoryField" promptText="Category ID"/>
+            <Button text="Update Product" onAction="#updateProduct" maxWidth="Infinity"/>
+        </VBox>
+        
+        <VBox spacing="30" alignment="TOP_CENTER">
+                        <VBox spacing="10" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Delete Product" styleClass="subtitle"/>
+                <TextField fx:id="deleteIdField" promptText="Product ID"/>
+                <Button text="Delete Product" onAction="#deleteProduct" style="-fx-background-color: #eba0ac;" maxWidth="Infinity"/>
+            </VBox>
+
+                        <VBox spacing="10" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Manage Inventory" styleClass="subtitle"/>
+                <TextField fx:id="invProductIdField" promptText="Product ID"/>
+                <TextField fx:id="stockField" promptText="Stock to Add"/>
+                <Button text="Add Stock" onAction="#addStock" style="-fx-background-color: #a6e3a1; -fx-text-fill: #11111b;" maxWidth="Infinity"/>
+            </VBox>
+        </VBox>
+    </HBox>
+
+        <VBox spacing="10" VBox.vgrow="ALWAYS" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+        <HBox alignment="CENTER_LEFT" spacing="20">
+            <Label text="Current Inventory" styleClass="subtitle" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Refresh View" onAction="#loadInventory"/>
+        </HBox>
+                <TableView fx:id="inventoryTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colInvId" text="ID" prefWidth="80"/>
+                <TableColumn fx:id="colInvName" text="Product Name" prefWidth="400"/>
+                <TableColumn fx:id="colInvPrice" text="Price" prefWidth="120"/>
+                <TableColumn fx:id="colInvCategory" text="Category ID" prefWidth="100"/>
+                <TableColumn fx:id="colInvStock" text="Stock" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+</VBox>

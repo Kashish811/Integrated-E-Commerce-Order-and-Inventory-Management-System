@@ -5,6 +5,10 @@ import model.Product;
 
 import java.util.List;
 
+/**
+ * Class MainTest
+ * Simple comment for MainTest
+ */
 public class MainTest {
 
     public static void main(String[] args) {
@@ -12,17 +16,12 @@ public class MainTest {
         ProductService productService = new ProductService();
         CartService cartService = new CartService();
         OrderService orderService = new OrderService();
-
-        // Show products
         List<Product> products = productService.getAllProducts();
         for (Product p : products) {
             System.out.println(p.getProductName() + " - Rs." + p.getPrice());
         }
+        cartService.addToCart(1, 2);
 
-        // Add to cart
-        cartService.addToCart(1, 2); // productId 1, quantity 2
-
-        // Place order
         orderService.placeOrder(1, 1, cartService.getCartItems());
     }
 }

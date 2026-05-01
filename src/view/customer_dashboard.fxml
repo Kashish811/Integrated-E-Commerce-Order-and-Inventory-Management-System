@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Region?>
+
+<!-- Simple FXML View -->
+<VBox spacing="20" alignment="TOP_CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CustomerController"
+      prefWidth="1100" prefHeight="800"
+      stylesheets="@styles.css"
+      styleClass="root"
+      style="-fx-padding: 30;">
+
+        <HBox alignment="CENTER_LEFT" spacing="15">
+        <Label text="Customer Dashboard" styleClass="title" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button text="Load Products" onAction="#loadProducts"/>
+        <Button text="View Cart" onAction="#viewCart"/>
+        <Button text="Checkout" onAction="#checkout" style="-fx-background-color: #a6e3a1; -fx-text-fill: #11111b;"/>
+        <Button text="View Orders" onAction="#viewOrders"/>
+        <Button text="Logout" onAction="#logout" style="-fx-background-color: #f38ba8; -fx-text-fill: #11111b;"/>
+    </HBox>
+
+    <HBox spacing="30" alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+                <VBox spacing="15" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+            <Label text="Available Products" styleClass="subtitle" />
+                        <TableView fx:id="productTable" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colProductId" text="ID" prefWidth="60"/>
+                    <TableColumn fx:id="colProductName" text="Name" prefWidth="240"/>
+                    <TableColumn fx:id="colProductPrice" text="Price" prefWidth="120"/>
+                </columns>
+            </TableView>
+
+                        <VBox spacing="10">
+                <Label text="Quick Add to Cart" styleClass="subtitle"/>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <TextField fx:id="productIdField" promptText="Product ID" prefWidth="120"/>
+                    <TextField fx:id="quantityField" promptText="Quantity" prefWidth="100"/>
+                    <Button text="Add to Cart" onAction="#addToCart"/>
+                </HBox>
+            </VBox>
+        </VBox>
+
+                <VBox spacing="20" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+            
+                        <VBox spacing="15" VBox.vgrow="ALWAYS" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+                <Label text="Your Cart" styleClass="subtitle" />
+                                <TableView fx:id="cartTable" prefHeight="200" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colCartProductId" text="ID" prefWidth="60"/>
+                        <TableColumn fx:id="colCartName" text="Name" prefWidth="180"/>
+                        <TableColumn fx:id="colCartQty" text="Qty" prefWidth="60"/>
+                        <TableColumn fx:id="colCartPrice" text="Price" prefWidth="100"/>
+                    </columns>
+                </TableView>
+
+                                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <TextField fx:id="updateCartQtyField" promptText="New Qty" prefWidth="80"/>
+                    <Button text="Update Qty" onAction="#updateCartQuantity"/>
+                    <Button text="Remove Item" onAction="#removeFromCart" style="-fx-background-color: #eba0ac; -fx-text-fill: #11111b;"/>
+                </HBox>
+            </VBox>
+            
+                        <VBox spacing="15" VBox.vgrow="ALWAYS" style="-fx-background-color: #313244; -fx-padding: 20; -fx-background-radius: 10;">
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <Label text="Order History" styleClass="subtitle" />
+                    <Region HBox.hgrow="ALWAYS" />
+                    <Button text="View Details" onAction="#viewOrderDetails" style="-fx-font-size: 12px; -fx-padding: 4 8;"/>
+                </HBox>
+                                <TableView fx:id="orderTable" prefHeight="150" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colOrderId" text="Order ID" prefWidth="80"/>
+                        <TableColumn fx:id="colOrderStatus" text="Status" prefWidth="120"/>
+                        <TableColumn fx:id="colOrderTotal" text="Total" prefWidth="100"/>
+                    </columns>
+                </TableView>
+                
+                <Label text="Selected Order Details" styleClass="subtitle" style="-fx-font-size: 14px;" />
+                                <TableView fx:id="orderItemTable" prefHeight="130" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colItemName" text="Product" prefWidth="180"/>
+                        <TableColumn fx:id="colItemQty" text="Qty" prefWidth="60"/>
+                        <TableColumn fx:id="colItemPrice" text="Price" prefWidth="100"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </VBox>
+    </HBox>
+
+</VBox>
