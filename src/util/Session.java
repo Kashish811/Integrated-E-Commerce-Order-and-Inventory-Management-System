@@ -1,9 +1,5 @@
 package util;
 
-/**
- * Class Session
- * Simple comment for Session
- */
 public class Session {
     private static int customerId;
 
