@@ -3,10 +3,6 @@ package service;
 import java.sql.*;
 import util.DatabaseConnection;
 
-/**
- * Class InventoryService
- * Simple comment for InventoryService
- */
 public class InventoryService {
     // Method getStock
     public int getStock(int productId) throws Exception {
