@@ -1,9 +1,5 @@
 package model;
 
-/**
- * Class Customer
- * Simple comment for Customer
- */
 public class Customer {
     private int id;
     private String name;
