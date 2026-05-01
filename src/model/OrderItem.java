@@ -1,9 +1,4 @@
 package model;
-
-/**
- * Class OrderItem
- * Simple comment for OrderItem
- */
 public class OrderItem {
 
     private String productName;
