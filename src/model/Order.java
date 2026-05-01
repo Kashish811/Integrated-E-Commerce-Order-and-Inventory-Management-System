@@ -1,9 +1,5 @@
 package model;
 
-/**
- * Class Order
- * Simple comment for Order
- */
 public class Order {
 
     private int orderId;
