@@ -5,10 +5,6 @@ import util.DatabaseConnection;
 
 import java.sql.*;
 
-/**
- * Class CustomerService
- * Simple comment for CustomerService
- */
 public class CustomerService {
     // Method login
     public int login(String email, String password) throws Exception {
