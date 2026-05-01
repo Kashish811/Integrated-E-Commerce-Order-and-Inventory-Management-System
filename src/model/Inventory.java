@@ -1,9 +1,5 @@
 package model;
 
-/**
- * Class Inventory
- * Simple comment for Inventory
- */
 public class Inventory {
     private int productId;
     private int stock;
