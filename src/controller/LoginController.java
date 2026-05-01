@@ -8,10 +8,6 @@ import javafx.stage.Stage;
 import service.CustomerService;
 import util.Session;
 
-/**
- * Class LoginController
- * Simple comment for LoginController
- */
 public class LoginController {
 
     @FXML private TextField emailField;
