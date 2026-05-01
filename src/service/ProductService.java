@@ -7,10 +7,6 @@ import model.Product;
 import util.CustomException;
 import util.DatabaseConnection;
 
-/**
- * Class ProductService
- * Simple comment for ProductService
- */
 public class ProductService {
     // Method getAllProducts
     public List<Product> getAllProducts() throws Exception {
